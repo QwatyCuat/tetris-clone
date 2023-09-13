@@ -1,0 +1,181 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Urbanist', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #232324;
+  color: #1e203b;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* The border and size around the game */
+  background-color: #ffffff;
+  width: 500px;
+  height: 818px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #555 inset;
+}
+
+/* Start up menu */
+.start-menu {
+  width: 500px;
+  height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  /* animation fade in */
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.tetris-h {
+  margin-bottom: 0px;
+}
+
+.byRV {
+  margin-bottom: 60px;
+}
+
+#start-button {
+  background-color: #1e203b;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+  border-radius: 8px;
+  height: 40px;
+  width: 160px;
+  margin-bottom: 60px;
+}
+
+.container {
+  display: flex;
+}
+
+.game-elements {
+  /* animation fade in */
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/* Referring to the h2 in the game elements that just says tetris (I know I should probably give it a class or id) */
+h2 {
+  text-align: center;
+}
+/* The score, pause, and next display */
+.topContainer {
+  width: 316px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+/* The score box on the top left and the score heading itself */
+.scoreContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreHeading {
+  color: #1e203b;
+  margin: 0px;
+}
+
+.scoreValue {
+  background-color: #1e203b;
+  color: #ffffff;
+  height: 60px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+/* The pause button in the top center */
+#pause-button {
+  background-color: #1e203b;
+  color: #ffffff;
+  font-family: 'Urbanist', sans-serif;
+  border-radius: 8px;
+  height: 60px;
+  width: 100px;
+  margin-bottom: 5px;
+}
+
+/* The next mini-grid on the top right */
+.nextHeading {
+  color: #1e203b;
+  margin: 0px;
+}
+
+.mini-grid {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e203b;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+}
+
+.mini-grid div {
+  height: 15px;
+  width: 15px;
+}
+
+
+/* The grid where the tetrominoes are in play */
+.grid {
+  width: 300px;
+  height: 600px;
+  padding: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1e203b; 
+  border-radius: 10px;
+}
+
+.grid div {
+  height: 30px;
+  width: 30px;
+}
+
+.tetromino {
+  background-color: #ffffff;
+  border-radius: 3px;
+}
+
+/* Animations */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+.start-menu.fade-out {
+  animation: fadeOut 1s forwards;
+}

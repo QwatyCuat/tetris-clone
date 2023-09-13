@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="app.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@300&family=Urbanist:wght@800&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+</head>
+<body>
+  <div class="game">
+    <!--Start menu-->
+    <div class="start-menu" id="start-menu">
+      <h1 class="tetris-h">Tetris</h1>
+      <h4 class="byRV">By Raul Verdugo III</h4>
+      <button id="start-button">START</button>
+    </div>
+
+    <!--Game Elements-->
+    <div class="game-elements" id="game-elements" style="display: none;">
+      <h2>Tetris</h2>
+      <div class="topContainer">
+        <div class="scoreContainer">
+          <h3 class="scoreHeading">Score </h3>  
+          <span id="score" class="scoreValue">0</span>
+        </div>
+
+        <button id="pause-button">Pause</button>
+
+        <div class="nextContainer">
+          <h3 class="nextHeading">Next</h3>
+          <div class="mini-grid">
+          </div>
+        </div>
+      </div>
+      
+      <div class="container">
+        <div class="grid">
+        </div>
+      </div>
+    </div>
+  </div>
+    
+</body>
+</html>
